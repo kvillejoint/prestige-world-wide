@@ -23,7 +23,7 @@ app.use(express.static("public"));
 // ===============================
 //       MONGOOSE / MONGO
 // ===============================
-mongoose.connect("mongodb://localhost/week18day3mongoose");
+mongoose.connect("mongodb://localhost/prestige-world-wide");
 var db = mongoose.connection;
 
 db.on("error", function(error) {
