@@ -7,9 +7,10 @@ var axios = require("axios");
 //             Helper function for API call
 // ==================================
 
-let helper = 
-{
-
+export const helper = () => {
+    console.log(axios);
 }
+    
 
-module.exports = helper;
+
+// module.exports = helper;
