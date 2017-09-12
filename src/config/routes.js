@@ -1,4 +1,11 @@
 import  Main from "../components/Main";
+
+import Chicago from "../components/cities/Chicago";
+import Dc from "../components/cities/Dc";
+import Miami from "../components/cities/Miami";
+import Nyc from "../components/cities/Nyc";
+import Sf from "../components/cities/Sf";
+
 // Inclue the React library
 const React = require("react");
 
@@ -19,22 +26,14 @@ const hashHistory = router.hashHistory;
 // Include the IndexRoute (catch-all route)
 const IndexRoute = router.IndexRoute;
 
-// Reference all city component
-
-const Chicago = require("../components/cities/Chicago");
-const Dc = require("../components/cities/Dc");
-const Miami = require("../components/cities/Miami");
-const Nyc = require("../components/cities/Nyc");
-const Sf = require("../components/cities/Sf");
-
 // Export all routes
 const routes = (
         <Route path="/" component={Main}>
-            <Route path="/Chicago" component={Chicago} />
-            <Route path="/Dc" component={Dc} />
-            <Route path="/Miami" component={Miami} />
-            <Route path="/Nyc" component={Nyc} />
-            <Route path="/Sf" component={Sf} />
+            <Route path="Chicago" component={Chicago} />
+            <Route path="Dc" component={Dc} />
+            <Route path="Miami" component={Miami} />
+            <Route path="Nyc" component={Nyc} />
+            <Route path="Sf" component={Sf} />
         </Route>
 );
 

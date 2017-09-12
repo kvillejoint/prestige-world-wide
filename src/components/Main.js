@@ -15,6 +15,10 @@ let axios = require("./utils/helpers");
 // ==================================
 let Main = React.createClass({
     render: function() {
+        const {
+            children
+        } = this.props;
+
         return (
             <div className="container">
                 <div className="btn-group" role="group" aria-label="Basic example">
@@ -25,6 +29,7 @@ let Main = React.createClass({
                     <Link to="/Nyc"><button className="btn btn-secondary" type="button">Nyc</button></Link>
                     <Link to="/Sf"><button className="btn btn-secondary" type="button">Sf</button></Link>
                 </div>
+                { children }
             </div>
         )
     }
