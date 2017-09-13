@@ -2,12 +2,20 @@
 import React from "react";
 import Link from "react-router";
 
-class ChiLocal extends React.Component {
+class ChiTourist extends React.Component {
     render() {
         return (
-            <h1>Welcome to local chicago</h1>
+            <div id="chicagoTouristCarousel" className="carousel slide" data-ride="carousel">
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <div className="row">
+                            <p>hi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         )
     }
 };
 
-export { ChiLocal as default };
+export { ChiTourist as default };

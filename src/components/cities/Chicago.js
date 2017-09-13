@@ -4,7 +4,6 @@ import ChiTourist from "./tourist/Chicago"
 
 // Require react dependencies
 import React from "react";
-import ReactDOM from "react-dom";
 import Link from "react-router";
 
 class Chicago extends React.Component {
