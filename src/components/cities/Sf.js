@@ -1,13 +1,24 @@
-// Require react dependencies
-const React = require("react");
-const Link = require("react-router").Link;
+// import grandchild files
+import SfLocal from "./local/Sf";
+import SfTourist from "./tourist/Sf";
 
-const Sf = React.createClass({
-    render: function() {
+// Require react dependencies
+import React from "react";
+import Link from "react-router";
+
+class Dc extends React.Component {
+    render() {
         return (
-            <h1>Sf Rendered</h1>
+            <div>
+                <h1>
+                    San Francisco, CA
+                </h1>
+                <SfLocal />
+                <hr />
+                <SfTourist />
+            </div>
         )
     }
-});
+};
 
-export { Sf as default };
+export { Dc as default };

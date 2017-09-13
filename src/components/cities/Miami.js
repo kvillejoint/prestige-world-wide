@@ -1,13 +1,24 @@
-// Require react dependencies
-const React = require("react");
-const Link = require("react-router").Link;
+// import grandchild files
+import MiamiLocal from "./local/Miami";
+import MiamiTourist from "./tourist/Miami";
 
-const Miami = React.createClass({
-    render: function() {
+// Require react dependencies
+import React from "react";
+import Link from "react-router";
+
+class Dc extends React.Component {
+    render() {
         return (
-            <h1>Miami Rendered</h1>
+            <div>
+                <h1>
+                    Miami, FL
+                </h1>
+                <MiamiLocal />
+                <hr />
+                <MiamiTourist />
+            </div>
         )
     }
-});
+};
 
-export { Miami as default };
+export { Dc as default };
