@@ -1,13 +1,24 @@
-// Require react dependencies
-const React = require("react");
-const Link = require("react-router").Link;
+// import grandchild files
+import DcLocal from "./local/Dc";
+import DCTourist from "./tourist/Dc";
 
-const Dc = React.createClass({
-    render: function() {
+// Require react dependencies
+import React from "react";
+import Link from "react-router";
+
+class Dc extends React.Component {
+    render() {
         return (
-            <h1>Dc Rendered</h1>
+            <div>
+                <h1>
+                    Washington DC
+                </h1>
+                <DcLocal />
+                <hr />
+                <DCTourist />
+            </div>
         )
     }
-});
+};
 
 export { Dc as default };
