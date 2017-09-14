@@ -6,7 +6,7 @@ import SfTourist from "./tourist/Sf";
 import React from "react";
 import Link from "react-router";
 
-class Dc extends React.Component {
+class Sf extends React.Component {
     render() {
         return (
             <div>
@@ -21,4 +21,4 @@ class Dc extends React.Component {
     }
 };
 
-export { Dc as default };
+export { Sf as default };
