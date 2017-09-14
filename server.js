@@ -34,6 +34,10 @@ db.once("open", function() {
   console.log("Mongoose connection successful.");
 });
 
+app.get("/", function(req, res) {
+  res.sendFile("./public/homepage.html");
+})
+
 app.listen(4000, function() {
   console.log("App running on port 4000!");
 });
