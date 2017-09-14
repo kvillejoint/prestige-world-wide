@@ -1,5 +1,5 @@
 console.log("cities.js connected");
 
-$('.carousel').carousel() {
+$('.carousel').carousel({
     interval: 15000
-};
+}); 
