@@ -11,12 +11,19 @@ class Nyc extends React.Component {
         return (
             <div>
                 <h1>
-                    New York, NY
+                    NYC
                 </h1>
-                <NycLocal />
-                <hr />
-                <NycTourist />
-            </div>
+            <div className="row">
+                <div className="col-sm-6 local">
+                    <h3>Local Nyc</h3>
+                    <NycLocal />
+                </div>
+                <div className="col-sm-6 tourist">
+                    <h3>Touristy Nyc</h3>
+                    <NycTourist />
+                </div>
+            </div>                
+        </div>
         )
     }
 };

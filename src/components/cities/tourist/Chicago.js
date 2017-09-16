@@ -5,57 +5,57 @@ import Link from "react-router";
 class ChiTourist extends React.Component {
     render() {
         return (
-
-            <div id="chicagoTouristCarousel" className="carousel slide" data-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <div className="row">
-                            <div className="col-md-4 col-sm-12">
-                                <img className="touristImg" src="http://via.placeholder.com/250x150" />
-                                <p className="description">Description goes here. fnasjklfnb fjdkbflaksnfjk sa,fbjasfn,msa fjksan salkbfnas;f asjkf jlsa fkjas lkf sajf salkf asljf akls fnasfkjlas fasfmsafjkl</p>
-                            </div>
-                            <div className="col-md-4 col-sm-12">
-                                <p>Mapzxzxdas</p>
-                                <p>Address</p>
-                                <p>Hours of business</p>
-                            </div>
-                            <div className="col-md-4 col-sm-12">
-                                <p>Popular times</p>
-                                <p>Star rating</p>
-                                <p>Link for reviews</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="carousel-item">
-                    <div className="row">
-                        <div className="col-md-4 col-sm-12">
-                            <img className="touristImg" src="http://via.placeholder.com/250x150" />
-                            <p className="description">Description goes here. fnasjklfnb fjdkbflaksnfjk sa,fbjasfn,msa fjksan salkbfnas;f asjkf jlsa fkjas lkf sajf salkf asljf akls fnasfkjlas fasfmsafjkl</p>
-                        </div>
-                        <div className="col-md-4 col-sm-12">
-                            <p>Map</p>
-                            <p>Address</p>
-                            <p>Hours of business</p>
-                        </div>
-                        <div className="col-md-4 col-sm-12">
-                            <p>Popular times</p>
-                            <p>Star rating</p>
-                            <p>Link for reviews</p>
-                        </div>
+            <div>
+                <div className="row">
+                    <div className="col-sm-12">
+                        <img className="localImg" src="http://via.placeholder.com/400x150" />
                     </div>
                 </div>
-
+                <div className="row">
+                    <div className="col-md-4 col-sm-12">
+                        <p className="description">Description</p>   
+                        <p className="address">Address</p>
+                    </div>
+                    <div className="col-md-4 col-sm-12">
+                        <p className="businessHours">Hours of business</p>
+                        <p className="ratings">Star rating</p>
+                        <p className="reviews">Link for reviews</p>
+                    </div>
                 </div>
-
-                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="sr-only">Previous</span>
-                </a>
-                <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="sr-only">Next</span>
-                </a>
+                <hr />
+                <div className="row">
+                    <div className="col-sm-12">
+                        <img className="localImg" src="http://via.placeholder.com/400x150" />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-4 col-sm-12">
+                        <p className="description">Description</p>   
+                        <p className="address">Address</p>
+                    </div>
+                    <div className="col-md-4 col-sm-12">
+                        <p className="businessHours">Hours of business</p>
+                        <p className="ratings">Star rating</p>
+                        <p className="reviews">Link for reviews</p>
+                    </div>
+                </div>
+                <hr />
+                <div className="row">
+                    <div className="col-sm-12">
+                        <img className="localImg" src="http://via.placeholder.com/400x150" />
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-4 col-sm-12">
+                        <p className="description">Description</p>   
+                        <p className="address">Address</p>
+                    </div>
+                    <div className="col-md-4 col-sm-12">
+                        <p className="businessHours">Hours of business</p>
+                        <p className="ratings">Star rating</p>
+                        <p className="reviews">Link for reviews</p>
+                    </div>
+                </div>
             </div>
         )
     }

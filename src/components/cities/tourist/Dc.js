@@ -3,40 +3,62 @@ import React from "react";
 import Link from "react-router";
 
 class DcTourist extends React.Component {
-    render() {
-        return (
-            <div>
-                <h1>Welcome to Washington DC</h1>
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="http://via.placeholder.com/350x150" alt="First slide" />
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="http://via.placeholder.com/350x150" alt="Second slide" />
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="http://via.placeholder.com/350x150" alt="Third slide" />
-                  </div>
+  render() {
+    return (
+        <div>
+            <div className="row">
+                <div className="col-sm-12">
+                    <img className="localImg" src="http://via.placeholder.com/400x150" />
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-
-            </div>  
-        )
-    }
+            </div>
+            <div className="row">
+                <div className="col-md-4 col-sm-12">
+                    <p className="description">Description</p>   
+                    <p className="address">Address</p>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                    <p className="businessHours">Hours of business</p>
+                    <p className="ratings">Star rating</p>
+                    <p className="reviews">Link for reviews</p>
+                </div>
+            </div>
+            <hr />
+            <div className="row">
+                <div className="col-sm-12">
+                    <img className="localImg" src="http://via.placeholder.com/400x150" />
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-4 col-sm-12">
+                    <p className="description">Description</p>   
+                    <p className="address">Address</p>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                    <p className="businessHours">Hours of business</p>
+                    <p className="ratings">Star rating</p>
+                    <p className="reviews">Link for reviews</p>
+                </div>
+            </div>
+            <hr />
+            <div className="row">
+                <div className="col-sm-12">
+                    <img className="localImg" src="http://via.placeholder.com/400x150" />
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-md-4 col-sm-12">
+                    <p className="description">Description</p>   
+                    <p className="address">Address</p>
+                </div>
+                <div className="col-md-4 col-sm-12">
+                    <p className="businessHours">Hours of business</p>
+                    <p className="ratings">Star rating</p>
+                    <p className="reviews">Link for reviews</p>
+                </div>
+            </div>
+        </div>
+    )
+  }
 };
 
 export { DcTourist as default };
