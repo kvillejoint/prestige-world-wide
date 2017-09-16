@@ -11,12 +11,19 @@ class Sf extends React.Component {
         return (
             <div>
                 <h1>
-                    San Francisco, CA
+                    San Fransisco
                 </h1>
-                <SfLocal />
-                <hr />
-                <SfTourist />
-            </div>
+            <div className="row">
+                <div className="col-sm-6 local">
+                    <h3>Local San Fran</h3>
+                    <SfLocal />
+                </div>
+                <div className="col-sm-6 tourist">
+                    <h3>Touristy San Fran</h3>
+                    <SfTourist />
+                </div>
+            </div>                
+        </div>
         )
     }
 };

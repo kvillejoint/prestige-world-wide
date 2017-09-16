@@ -20,7 +20,7 @@ let Main = React.createClass({
         } = this.props;
 
         return (
-            <div className="container">
+            <div className="container-fluid">
                 <div className="btn-group" role="group" aria-label="Basic example">
                     <Link to="/Chicago"><button id="chicago" className="btn btn-secondary" type="button">Chicago</button></Link>
                     <Link to="/Dc"><button id="dc" className="btn btn-secondary" type="button">Dc</button></Link>
@@ -28,7 +28,7 @@ let Main = React.createClass({
                     <Link to="/Nyc"><button id="nyc" className="btn btn-secondary" type="button">Nyc</button></Link>
                     <Link to="/Sf"><button id="sf" className="btn btn-secondary" type="button">Sf</button></Link>
                 </div>
-                { children }
+                {children}
             </div>
         )
     }
