@@ -1,26 +1,26 @@
-// chicago child files
-import ChiLocal from "./local/Chicago";
-import ChiTourist from "./tourist/Chicago";
+// Philly Phillyld files
+import PhillyLocal from "./local/Philly";
+import PhillyTourist from "./tourist/Philly";
 
 // Require react dependencies
 import React from "react";
 import Link from "react-router";
 
-class Chicago extends React.Component {
+class Philly extends React.Component {
     render() {
         return (
             <div>
                 <h1>
-                    Chicago
+                    Philly
                 </h1>
                 <div className="row">
                     <div className="col-sm-6 local">
-                        <h3>Local Chicago</h3>
-                        <ChiLocal />
+                        <h3>Local Philly</h3>
+                        <PhillyLocal />
                     </div>
                     <div className="col-sm-6 tourist">
-                        <h3>Touristy Chicago</h3>
-                        <ChiTourist />
+                        <h3>Touristy Philly</h3>
+                        <PhillyTourist />
                     </div>
                 </div>                
             </div>
@@ -28,4 +28,4 @@ class Chicago extends React.Component {
     }
 };
 
-export { Chicago as default };
+export { Philly as default };

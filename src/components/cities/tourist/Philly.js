@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "react-router";
 
-class ChiLocal extends React.Component {
+class PhillyTourist extends React.Component {
     render() {
         return (
             <div>
@@ -61,4 +61,4 @@ class ChiLocal extends React.Component {
     }
 };
 
-export { ChiLocal as default };
+export { PhillyTourist as default };
