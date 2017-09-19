@@ -22,7 +22,7 @@ let Main = React.createClass({
         return (
             <div className="container-fluid">
                 <div className="btn-group" role="group" aria-label="Basic example">
-                    <Link to="/Chicago"><button id="chicago" className="btn btn-secondary" type="button">Chicago</button></Link>
+                    <Link to="/Philly"><button id="philly" className="btn btn-secondary" type="button">Philly</button></Link>
                     <Link to="/Dc"><button id="dc" className="btn btn-secondary" type="button">Dc</button></Link>
                     <Link to="/Miami"><button id="miami" className="btn btn-secondary" type="button">Miami</button></Link>
                     <Link to="/Nyc"><button id="nyc" className="btn btn-secondary" type="button">Nyc</button></Link>

@@ -1,10 +1,10 @@
 import  Main from "../components/Main";
 
-// import chicago
-import Chicago from "../components/cities/Chicago";
-// chicago child files
-import ChiLocal from "../components/cities/local/Chicago";
-import ChiTourist from "../components/cities/tourist/Chicago";
+// import Philly
+import Philly from "../components/cities/Philly";
+// Philly child files
+import PhillyLocal from "../components/cities/local/Philly";
+import PhillyTourist from "../components/cities/tourist/Philly";
 
 // import dc
 import Dc from "../components/cities/Dc";
@@ -53,10 +53,7 @@ const IndexRoute = router.IndexRoute;
 // Export all routes
 const routes = (
         <Route path="/" component={Main}>
-            <Route path="Chicago" component={Chicago}>
-                <Route path="ChiLocal" component={ChiLocal}/>
-                <Route path="ChiTourist" component={ChiTourist}/>
-            </Route>
+            <Route path="Philly" component={Philly} />
             <Route path="Dc" component={Dc} />
             <Route path="Miami" component={Miami} />
             <Route path="Nyc" component={Nyc} />
