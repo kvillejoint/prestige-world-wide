@@ -20,15 +20,21 @@ let Main = React.createClass({
         } = this.props;
 
         return (
-            <div className="container-fluid">
-                <div className="btn-group" role="group" aria-label="Basic example">
+            <div className="row">
+                <div className="col-sm-12 navButtons">
                     <Link to="/Philly"><button id="philly" className="btn btn-secondary" type="button">Philly</button></Link>
                     <Link to="/Dc"><button id="dc" className="btn btn-secondary" type="button">Dc</button></Link>
                     <Link to="/Miami"><button id="miami" className="btn btn-secondary" type="button">Miami</button></Link>
                     <Link to="/Nyc"><button id="nyc" className="btn btn-secondary" type="button">Nyc</button></Link>
                     <Link to="/Sf"><button id="sf" className="btn btn-secondary" type="button">Sf</button></Link>
                 </div>
-                {children}
+            </div>
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-sm-12">
+                        {children}
+                    </div>
+                </div>
             </div>
         )
     }

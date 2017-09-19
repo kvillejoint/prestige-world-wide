@@ -2,3 +2,8 @@
     border-radius: 0;
     width: 110px;
 }
+
+.navButtons {
+    width: 100%;
+    text-align: center;
+}
