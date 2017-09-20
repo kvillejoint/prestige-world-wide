@@ -52,12 +52,12 @@ const IndexRoute = router.IndexRoute;
 
 // Export all routes
 const routes = (
-        <Route path="/" component={Main}>
-            <Route path="Philly" component={Philly} />
-            <Route path="Dc" component={Dc} />
-            <Route path="Miami" component={Miami} />
-            <Route path="Nyc" component={Nyc} />
-            <Route path="Sf" component={Sf} />
+        <Route path="/app" component={Main}>
+            <Route path="/app/Philly" component={Philly} />
+            <Route path="/app/Dc" component={Dc} />
+            <Route path="/app/Miami" component={Miami} />
+            <Route path="/app/Nyc" component={Nyc} />
+            <Route path="/app/Sf" component={Sf} />
         </Route>
 );
 

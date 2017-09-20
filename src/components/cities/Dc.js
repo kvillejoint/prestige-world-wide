@@ -10,16 +10,16 @@ class Dc extends React.Component {
     render() {
         return (
             <div>
-                <h1>
-                    Washington DC
-                </h1>
+                <h2>
+                    Washington D.C.
+                </h2>
                 <div className="row">
                     <div className="col-sm-6 local">
-                        <h3>Local Dc</h3>
+                        <p className="citySections">Local Gems <i className="fa fa-diamond" aria-hidden="true"></i></p>
                         <DcLocal />
                     </div>
                     <div className="col-sm-6 tourist">
-                        <h3>Touristy Dc</h3>
+                        <p className="citySections">Tourist Attractions <i className="fa fa-list" aria-hidden="true"></i></p>
                         <DcTourist />
                     </div>
                 </div>              

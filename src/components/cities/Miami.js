@@ -10,19 +10,19 @@ class Miami extends React.Component {
     render() {
         return (
             <div>
-                <h1>
-                    Miami
-                </h1>
-            <div className="row">
-                <div className="col-sm-6 local">
-                    <h3>Local Miami</h3>
-                    <MiamiLocal />
-                </div>
-                <div className="col-sm-6 tourist">
-                    <h3>Touristy Miami</h3>
-                    <MiamiTourist />
-                </div>
-            </div>                
+                <h2>
+                    Miami, FL
+                </h2>
+                <div className="row">
+                    <div className="col-sm-6 local">
+                        <p className="citySections">Local Gems <i className="fa fa-diamond" aria-hidden="true"></i></p>
+                        <MiamiLocal />
+                    </div>
+                    <div className="col-sm-6 tourist">
+                        <p className="citySections">Tourist Attractions <i className="fa fa-list" aria-hidden="true"></i></p>
+                        <MiamiTourist />
+                    </div>
+                </div>                 
         </div>
         )
     }

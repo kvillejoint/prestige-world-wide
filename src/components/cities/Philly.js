@@ -10,19 +10,19 @@ class Philly extends React.Component {
     render() {
         return (
             <div>
-                <h1>
-                    Philly
-                </h1>
+                <h2>
+                    Philadelphia, PA
+                </h2>
                 <div className="row">
                     <div className="col-sm-6 local">
-                        <h3>Local Philly</h3>
+                        <p className="citySections">Local Gems <i className="fa fa-diamond" aria-hidden="true"></i></p>
                         <PhillyLocal />
                     </div>
                     <div className="col-sm-6 tourist">
-                        <h3>Touristy Philly</h3>
+                        <p className="citySections">Tourist Attractions <i className="fa fa-list" aria-hidden="true"></i></p>
                         <PhillyTourist />
                     </div>
-                </div>                
+                </div>               
             </div>
         )
     }

@@ -10,20 +10,20 @@ class Sf extends React.Component {
     render() {
         return (
             <div>
-                <h1>
-                    San Fransisco
-                </h1>
-            <div className="row">
-                <div className="col-sm-6 local">
-                    <h3>Local San Fran</h3>
-                    <SfLocal />
-                </div>
-                <div className="col-sm-6 tourist">
-                    <h3>Touristy San Fran</h3>
-                    <SfTourist />
-                </div>
-            </div>                
-        </div>
+                <h2>
+                    San Fransisco, CA
+                </h2>
+                <div className="row">
+                    <div className="col-sm-6 local">
+                        <p className="citySections">Local Gems <i className="fa fa-diamond" aria-hidden="true"></i></p>
+                        <SfLocal />
+                    </div>
+                    <div className="col-sm-6 tourist">
+                        <p className="citySections">Tourist Attractions <i className="fa fa-list" aria-hidden="true"></i></p>
+                        <SfTourist />
+                    </div>
+                </div>               
+            </div>
         )
     }
 };
