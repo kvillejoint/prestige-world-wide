@@ -1,9 +1,58 @@
+body {
+    background: linear-gradient(to right, #1bac91 50%, #3c9dd1 50%);
+    color: white;
+    text-align: center;
+}
+
+.btn:hover {
+    color: #1BAC91;
+}
+
 .btn {
+    width: 20%;
+    height: 45px;
+    color: white;
+    border: none;
     border-radius: 0;
-    width: 110px;
+    background-color: #333333;
+}
+
+.citySections {
+    font-size: 20px;
+    /* text-decoration: underline; */
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5px;
+    /* font-family: 'Permanent Marker', cursive; */
+    /* font-family: 'Courgette', cursive; */
+    /* font-family: 'Cantarell', sans-serif; */
+    /* font-family: 'Indie Flower', cursive;
+    font-size: 26px; */
+}
+
+hr {
+    background-color: white;
+    height: 3px;
+    border-radius: 15px;
+}
+
+.logo {
+    width: 75px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nav {
+    color: white;
+    background-color: #333333;
 }
 
 .navButtons {
     width: 100%;
-    text-align: center;
+    background-color: #333333;
+    margin-bottom: 10px;
+    margin: auto;
 }

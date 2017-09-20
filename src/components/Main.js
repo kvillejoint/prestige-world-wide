@@ -20,17 +20,20 @@ let Main = React.createClass({
         } = this.props;
 
         return (
-            <div className="row">
-                <div className="col-sm-12 navButtons">
-                    <Link to="/Philly"><button id="philly" className="btn btn-secondary" type="button">Philly</button></Link>
-                    <Link to="/Dc"><button id="dc" className="btn btn-secondary" type="button">Dc</button></Link>
-                    <Link to="/Miami"><button id="miami" className="btn btn-secondary" type="button">Miami</button></Link>
-                    <Link to="/Nyc"><button id="nyc" className="btn btn-secondary" type="button">Nyc</button></Link>
-                    <Link to="/Sf"><button id="sf" className="btn btn-secondary" type="button">Sf</button></Link>
-                </div>
-            </div>
             <div className="container-fluid">
-                <div className="row">
+                <div className="row nav">
+                    <div className="legend col-sm-2">
+                        <img className="logo" src="/img/logo-image.png" alt="" />
+                    </div>
+                    <div className="col-sm-10 navButtons">
+                        <Link to="/app/Philly"><button id="philly" className="btn" type="button">Philadelphia</button></Link>
+                        <Link to="/app/Dc"><button id="dc" className="btn" type="button">Washington D.C.</button></Link>
+                        <Link to="/app/Miami"><button id="miami" className="btn" type="button">Miami</button></Link>
+                        <Link to="/app/Nyc"><button id="nyc" className="btn" type="button">New York City</button></Link>
+                        <Link to="/app/Sf"><button id="sf" className="btn" type="button">San Fransisco</button></Link>
+                    </div>
+                </div>
+                <div className="row elementBody">
                     <div className="col-sm-12">
                         {children}
                     </div>

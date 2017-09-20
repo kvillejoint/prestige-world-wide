@@ -8,15 +8,15 @@ class MiamiLocal extends React.Component {
         <div>
             <div className="row">
                 <div className="col-sm-12">
-                    <img className="localImg" src="http://via.placeholder.com/400x150" />
+                    <img className="localImg img-thumbnail" src="http://via.placeholder.com/400x150" />
                 </div>
             </div>
             <div className="row">
-                <div className="col-md-4 col-sm-12">
+                <div className="col-md-6 col-sm-12">
                     <p className="description">Description</p>   
                     <p className="address">Address</p>
                 </div>
-                <div className="col-md-4 col-sm-12">
+                <div className="col-md-6 col-sm-12">
                     <p className="businessHours">Hours of business</p>
                     <p className="ratings">Star rating</p>
                     <p className="reviews">Link for reviews</p>
@@ -25,15 +25,15 @@ class MiamiLocal extends React.Component {
             <hr />
             <div className="row">
                 <div className="col-sm-12">
-                    <img className="localImg" src="http://via.placeholder.com/400x150" />
+                    <img className="localImg img-thumbnail" src="http://via.placeholder.com/400x150" />
                 </div>
             </div>
             <div className="row">
-                <div className="col-md-4 col-sm-12">
+                <div className="col-md-6 col-sm-12">
                     <p className="description">Description</p>   
                     <p className="address">Address</p>
                 </div>
-                <div className="col-md-4 col-sm-12">
+                <div className="col-md-6 col-sm-12">
                     <p className="businessHours">Hours of business</p>
                     <p className="ratings">Star rating</p>
                     <p className="reviews">Link for reviews</p>
@@ -42,15 +42,15 @@ class MiamiLocal extends React.Component {
             <hr />
             <div className="row">
                 <div className="col-sm-12">
-                    <img className="localImg" src="http://via.placeholder.com/400x150" />
+                    <img className="localImg img-thumbnail" src="http://via.placeholder.com/400x150" />
                 </div>
             </div>
             <div className="row">
-                <div className="col-md-4 col-sm-12">
+                <div className="col-md-6 col-sm-12">
                     <p className="description">Description</p>   
                     <p className="address">Address</p>
                 </div>
-                <div className="col-md-4 col-sm-12">
+                <div className="col-md-6 col-sm-12">
                     <p className="businessHours">Hours of business</p>
                     <p className="ratings">Star rating</p>
                     <p className="reviews">Link for reviews</p>
