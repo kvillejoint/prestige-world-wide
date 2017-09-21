@@ -34,7 +34,8 @@ app.get("/", function (req, res) {
 // ===============================
 //       MONGOOSE / MONGO
 // ===============================
-mongoose.connect("mongodb://localhost/prestige-world-wide");
+mongoose.connect("mongodb://phil:pww@ds147034.mlab.com:47034/heroku_7pkzfm7p");
+// mongoose.connect("mongodb://localhost/prestige-world-wide");
 var db = mongoose.connection;
 db.on("error", function (error) {
   console.log("Mongoose Error: ", error);
