@@ -24,12 +24,7 @@ body {
 
 h2 {
     text-align: center;
-    margin-top: 5px;
-    /* font-family: 'Permanent Marker', cursive; */
-    /* font-family: 'Courgette', cursive; */
-    /* font-family: 'Cantarell', sans-serif; */
-    /* font-family: 'Indie Flower', cursive;
-    font-size: 26px; */
+    margin-top: 10px;
 }
 
 hr {
@@ -43,6 +38,18 @@ hr {
     margin-left: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.locationImg {
+    width: 80%;
+    border-radius: 7px;
+    margin: 5px;
+    max-width: 550px;
+}
+
+#mainMessage {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .nav {

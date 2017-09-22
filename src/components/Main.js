@@ -38,6 +38,12 @@ let Main = React.createClass({
                         {children}
                     </div>
                 </div>
+                <div className="message row">
+                    <div className="col-sm-12">
+                        <h1 id="mainMessage">Pick a place above that you'd like to travel to.</h1>
+                        <img className="locationImg" src="/img/location.jpg" />
+                    </div>
+                </div>
             </div>
         )
     }
