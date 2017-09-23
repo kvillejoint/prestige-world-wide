@@ -47,6 +47,10 @@ hr {
     max-width: 550px;
 }
 
+.localImg {
+    width: 50%;    
+}
+
 #mainMessage {
     margin-top: 10px;
     margin-bottom: 10px;

@@ -1,64 +1,40 @@
-//require react dependencies
-import React from "react";
+
+// Require react dependencies
+import React, { Component } from "react";
 import Link from "react-router";
+import Dchelper from "./Dcl";
+import Info from "../../utils/Info";
+import Reviews from "../../utils/Reviews";
 
 class DcLocal extends React.Component {
-  render() {
-    return (
-        <div>
-            <div className="row">
-                <div className="col-sm-12">
-                    <img className="localImg img-thumbnail" src="http://via.placeholder.com/400x150" />
+    
+       constructor(props) {
+           super();
+                this.state = {
+                    attractions: []
+                }
+    }
+     componentDidMount() {
+        // make AJAX calls, set this.state.attractions, etc.
+       let Paxios =  Dchelper.runQuery();
+        Paxios.then(data => this.setState({attractions: data}));
+    }
+    renderInfoList() {
+      return this.state.attractions.map(attraction =>{
+            return <Info key = {attraction.id}  id = {attraction.id} website= {attraction.website} name= {attraction.name} address = {attraction.address} hours = {attraction.hours} rating = {attraction.rating} reviews = {attraction.reviews}/>
+        })
+    }
+   
+    render() {
+        return (
+            <div>
+                <div className="row">
+                        {this.renderInfoList()}
                 </div>
+                <hr />
             </div>
-            <div className="row">
-                <div className="col-md-6 col-sm-12">
-                    <p className="description">Description</p>   
-                    <p className="address">Address</p>
-                </div>
-                <div className="col-md-6 col-sm-12">
-                    <p className="businessHours">Hours of business</p>
-                    <p className="ratings">Star rating</p>
-                    <p className="reviews">Link for reviews</p>
-                </div>
-            </div>
-            <hr />
-            <div className="row">
-                <div className="col-sm-12">
-                    <img className="localImg img-thumbnail" src="http://via.placeholder.com/400x150" />
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-md-6 col-sm-12">
-                    <p className="description">Description</p>   
-                    <p className="address">Address</p>
-                </div>
-                <div className="col-md-6 col-sm-12">
-                    <p className="businessHours">Hours of business</p>
-                    <p className="ratings">Star rating</p>
-                    <p className="reviews">Link for reviews</p>
-                </div>
-            </div>
-            <hr />
-            <div className="row">
-                <div className="col-sm-12">
-                    <img className="localImg img-thumbnail" src="http://via.placeholder.com/400x150" />
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-md-6 col-sm-12">
-                    <p className="description">Description</p>   
-                    <p className="address">Address</p>
-                </div>
-                <div className="col-md-6 col-sm-12">
-                    <p className="businessHours">Hours of business</p>
-                    <p className="ratings">Star rating</p>
-                    <p className="reviews">Link for reviews</p>
-                </div>
-            </div>
-        </div>
-    )
-  }
+        )
+    }
 };
 
 export { DcLocal as default };

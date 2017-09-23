@@ -1,64 +1,37 @@
 // Require react dependencies
 import React from "react";
 import Link from "react-router";
+import PLhelper from "./PhillyL";
+import Info from "../../utils/Info";
 
 class PhillyLocal extends React.Component {
-    render() {
-        return (
-            <div>
-                <div className="row">
-                    <div className="col-sm-12">
-                        <img className="localImg img-thumbnail" src="http://via.placeholder.com/400x150" />
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-6 col-sm-12">
-                        <p className="description">Description</p>   
-                        <p className="address">Address</p>
-                    </div>
-                    <div className="col-md-6 col-sm-12">
-                        <p className="businessHours">Hours of business</p>
-                        <p className="ratings">Star rating</p>
-                        <p className="reviews">Link for reviews</p>
-                    </div>
-                </div>
-                <hr />
-                <div className="row">
-                    <div className="col-sm-12">
-                        <img className="localImg img-thumbnail" src="http://via.placeholder.com/400x150" />
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-6 col-sm-12">
-                        <p className="description">Description</p>   
-                        <p className="address">Address</p>
-                    </div>
-                    <div className="col-md-6 col-sm-12">
-                        <p className="businessHours">Hours of business</p>
-                        <p className="ratings">Star rating</p>
-                        <p className="reviews">Link for reviews</p>
-                    </div>
-                </div>
-                <hr />
-                <div className="row">
-                    <div className="col-sm-12">
-                        <img className="localImg img-thumbnail" src="http://via.placeholder.com/400x150" />
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-md-6 col-sm-12">
-                        <p className="description">Description</p>   
-                        <p className="address">Address</p>
-                    </div>
-                    <div className="col-md-6 col-sm-12">
-                        <p className="businessHours">Hours of business</p>
-                        <p className="ratings">Star rating</p>
-                        <p className="reviews">Link for reviews</p>
-                    </div>
-                </div>
-            </div>
-        )
-    }
+  constructor(props) {
+        super();
+             this.state = {
+                 attractions: []
+             }
+ }
+  componentDidMount() {
+     // make AJAX calls, set this.state.attractions, etc.
+    let Paxios =  PLhelper.runQuery();
+     Paxios.then(data => this.setState({attractions: data}));
+ }
+ renderInfoList() {
+   return this.state.attractions.map(attraction =>{
+         return <Info key = {attraction.id} id={attraction.id} name= {attraction.name} address = {attraction.address} hours = {attraction.hours} rating = {attraction.rating} website = {attraction.website}/>
+     })
+ }
+
+ render() {
+     return (
+         <div>
+             <div className="row">
+                     {this.renderInfoList()}
+             </div>
+             <hr />
+         </div>
+     )
+ }
 };
 
 export { PhillyLocal as default };

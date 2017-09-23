@@ -14,11 +14,11 @@ class Dc extends React.Component {
                     Washington D.C.
                 </h2>
                 <div className="row">
-                    <div className="col-sm-6 local">
+                    <div className="col-sm-12 col-md-6 col-lg-6 local">
                         <p className="citySections">Local Gems <i className="fa fa-diamond" aria-hidden="true"></i></p>
                         <DcLocal />
                     </div>
-                    <div className="col-sm-6 tourist">
+                    <div className="col-sm-12 col-md-6 col-lg-6 tourist">
                         <p className="citySections">Tourist Attractions <i className="fa fa-list" aria-hidden="true"></i></p>
                         <DcTourist />
                     </div>
