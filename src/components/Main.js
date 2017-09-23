@@ -40,6 +40,7 @@ let Main = React.createClass({
                             </Link>
                         </div>
                         <div className="col-sm-10 navButtons">
+                            <Link onClick={this.onClick} to="/app/Request"><button id="request" className="btn" type="button">Request a City</button></Link>
                             <Link onClick={this.onClick} to="/app/Philly"><button id="philly" className="btn" type="button">Philadelphia</button></Link>
                             <Link onClick={this.onClick} to="/app/Dc"><button id="dc" className="btn" type="button">Washington D.C.</button></Link>
                             <Link onClick={this.onClick} to="/app/Miami"><button id="miami" className="btn" type="button">Miami</button></Link>
@@ -64,6 +65,7 @@ let Main = React.createClass({
                         </Link>
                     </div>
                     <div className="col-sm-10 navButtons">
+                        <Link onClick={this.onClick} to="/app/Request"><button id="request" className="btn" type="button">Request a City</button></Link>
                         <Link onClick={this.onClick} to="/app/Philly"><button id="philly" className="btn" type="button">Philadelphia</button></Link>
                         <Link onClick={this.onClick} to="/app/Dc"><button id="dc" className="btn" type="button">Washington D.C.</button></Link>
                         <Link onClick={this.onClick} to="/app/Miami"><button id="miami" className="btn" type="button">Miami</button></Link>

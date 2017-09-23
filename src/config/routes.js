@@ -30,6 +30,8 @@ import Sf from "../components/cities/Sf";
 import SfLocal from "../components/cities/local/Sf";
 import SfTourist from "../components/cities/tourist/Sf";
 
+import Request from "../components/cities/Request";
+
 // Inclue the React library
 const React = require("react");
 
@@ -52,12 +54,13 @@ const IndexRoute = router.IndexRoute;
 
 // Export all routes
 const routes = (
-        <Route path="/app" component={Main}>
-            <Route path="/app/Philly" component={Philly} />
-            <Route path="/app/Dc" component={Dc} />
-            <Route path="/app/Miami" component={Miami} />
-            <Route path="/app/Nyc" component={Nyc} />
-            <Route path="/app/Sf" component={Sf} />
+        <Route exact path="/app" component={Main}>
+            <Route exact path="/app/Request" component={Request} />
+            <Route exact path="/app/Philly" component={Philly} />
+            <Route exact path="/app/Dc" component={Dc} />
+            <Route exact path="/app/Miami" component={Miami} />
+            <Route exact path="/app/Nyc" component={Nyc} />
+            <Route exact path="/app/Sf" component={Sf} />
         </Route>
 );
 
