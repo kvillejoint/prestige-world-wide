@@ -52,6 +52,11 @@ hr {
     margin-bottom: 10px;
 }
 
+.message {
+    width: 100%;
+    text-align: center;
+}
+
 .nav {
     color: white;
     background-color: #333333;

@@ -23,14 +23,17 @@ app.use(express.static("build", {
 // app.use(express.static("public"));
 
 app.get("/app/*", function (req, res) {
-  res.sendFile(path.join(__dirname, "build/index.html"));
+  res.sendFile(path.join(__dirname, "build", "index.html"));
 });
+
 app.get("/app", function (req, res) {
-  res.sendFile(path.join(__dirname, "build/index.html"));
+  res.sendFile(path.join(__dirname, "build", "index.html"));
 });
+
 app.get("/", function (req, res) {
-  res.sendFile("./public/homepage.html");
+  res.sendFile(path.join(__dirname, "public", "homepage.html"));
 });
+
 // ===============================
 //       MONGOOSE / MONGO
 // ===============================
