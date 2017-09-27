@@ -11,7 +11,7 @@ class Sf extends React.Component {
         return (
             <div>
                 <h2>
-                    San Fransisco, CA
+                    San Francisco, CA
                 </h2>
                 <div className="row">
                     <div className="col-sm-6 local">
