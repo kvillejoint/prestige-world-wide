@@ -7,10 +7,11 @@ class Info extends Component {
                                     //  console.log("HOURS" + typeof hours)
                                        return (
                                            <div className="row locationContainer">
-                                                       <div className="col-sm-12 cold-md-6 col-lg-6">
+                                                       <div className="col-sm-12 cold-md-12 col-lg-12 imgContainer">
                                                               <img className="localImg" src={imagePath} alt="topic pic"/>   
                                                        </div>
-                                                       <div className="col-md-4 col-lg-12">
+                                                       <div className="col-sm-12 col-md-12 col-lg-12">
+                                                        <button className="favorite"><i className="fa fa-star" aria-hidden="true"></i></button>
                                                                <p>{name}</p>
                                                                <p>{address}</p>
                                                                 {typeof hours === 'object' ? hours.map((hour,k)=><div key={k}><small>{hour}</small></div>) : hours} 

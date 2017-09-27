@@ -13,7 +13,7 @@ class Dc extends React.Component {
                 <h2>
                     Washington D.C.
                 </h2>
-                <div className="row">
+                <div className="row dcRow">
                     <div className="col-sm-12 col-md-6 col-lg-6 local">
                         <p className="citySections">Local Gems <i className="fa fa-diamond" aria-hidden="true"></i></p>
                         <DcLocal />
@@ -22,8 +22,8 @@ class Dc extends React.Component {
                         <p className="citySections">Tourist Attractions <i className="fa fa-list" aria-hidden="true"></i></p>
                         <DcTourist />
                     </div>
-                </div>              
-            </div>
+                </div>
+            </div>              
         )
     }
 };

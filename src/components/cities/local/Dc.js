@@ -31,7 +31,6 @@ class DcLocal extends React.Component {
                 <div className="row">
                         {this.renderInfoList()}
                 </div>
-                <hr />
             </div>
         )
     }

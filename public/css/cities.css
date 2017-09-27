@@ -35,6 +35,50 @@ body {
     color: white;
 }
 
+.favorite {
+    background: none;
+    border: none;
+    color: white;
+    height: 36px;
+}
+
+.favorite:hover {
+    border: 1px solid black;
+    color: #333333;
+    border-radius: 5px;
+}
+
+.favorite:focus {
+    background-color: tomato;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.fa.fa-star {
+    font-size: 25px;
+}
+
+.fa.fa-star:hover {
+    -webkit-animation-name: star;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 999999999;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: .5s;
+}
+
+@-webkit-keyframes star {
+    0% {}
+    25% {
+        transform: rotate(7deg);
+    }
+    50% {
+    }
+    75% {
+        transform: rotate(-7deg);
+    }
+    100% {}
+}
+
 form {
     text-align: left;
 }
@@ -44,10 +88,18 @@ h2 {
     margin-top: 10px;
 }
 
+.hoverText {
+    margin: 0 auto;
+    display: none;
+}
+
 hr {
     background-color: white;
     height: 3px;
     border-radius: 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 input {
@@ -57,6 +109,11 @@ input {
     background-color: #333333;
     color: white;
     padding: 2px 5px 2px 5px;
+}
+
+.imgContainer {
+    width: 100%;
+    text-align: center;
 }
 
 .logo {
@@ -73,8 +130,13 @@ input {
     max-width: 550px;
 }
 
+.locationContainer {
+    height: 700px;
+    overflow: auto;
+}
+
 .localImg {
-    width: 50%;    
+    width: 60%;    
 }
 
 #mainMessage {
@@ -120,4 +182,12 @@ input {
 
 #requestTitle {
     font-size: 20px;
+}
+
+.website {
+    color: white;
+}
+
+.website:hover {
+    color: #333333;
 }

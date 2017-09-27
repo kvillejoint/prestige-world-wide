@@ -30,7 +30,11 @@ var PLhelper = {
 
             placeID.forEach(place => {
                 const queryURL = `https://maps.googleapis.com/maps/api/place/details/json?placeid=${place}&key=${apiKey}`
-                 axios.get(queryURL).then(response => {
+                 axios.get(queryURL, {
+                    headers: {
+                   'Content-Type': 'application/json'
+               }
+           }).then(response => {
                     completed++;
                     // console.log(response.data);
                     let result = response.data.result;
