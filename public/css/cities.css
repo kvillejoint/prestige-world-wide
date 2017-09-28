@@ -132,7 +132,7 @@ input {
 
 .locationContainer {
     height: 700px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .localImg {
