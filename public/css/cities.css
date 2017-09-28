@@ -136,7 +136,8 @@ input {
 }
 
 .localImg {
-    width: 60%;    
+    width: 60%;  
+    max-height: 225px;  
 }
 
 #mainMessage {
